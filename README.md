@@ -1,14 +1,14 @@
 # Regra:
 
-A Api considera a palavra em todo o conteúdo da URL informada, sendo assim a busca não é apenas por texto visível na navegação por um navegador, mas sim em todo o código da página.
+A Api considera a palavra em todo o conteúdo da URL informada, sendo assim a busca não é apenas por texto renderizado por um navegador, mas sim em todo o código da página.
 
 ## Exemplo: Palavra pesquisada => ave
  ``` html
- <h1>Avestruz<h1><p>ave</p>
- <img src="ave.jpg"></img>
+ <h1>Avestruz<h1><p>Ave</p>
+ <img src="ave.jpg" alt="ave"></img>
   ```
  
- Resultado = 2 palavras encontradas(ave e ave.jpg)
+ Resultado = 2 palavras encontradas(Ave e ave)
  
 # Tecnologia
 
