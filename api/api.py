@@ -11,7 +11,7 @@ def count_words(url=None, word=None):
     link = "http://{0}".format(url)
     r = requests.get(link)
     # total words
-    return len(re.findall(r"\b{text}\b".format(text=word), r.text))
+    return len(re.findall(r"\b{text}\b".format(text=word), r.text, re.IGNORECASE))
 
 
 @get('/count/<url>/<word>')
