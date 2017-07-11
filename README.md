@@ -34,3 +34,16 @@ curl -i GET "http://localhost:8000/count/globoesporte.globo.com/Cruzeiro"
  ```json
  {"url_details": [{"access": "ok", "url": "globoesporte.globo.com"}], "total": 16, "word": "Cruzeiro"}
  ```
+
+
+# Executando os testes:
+Os testes criados são testes "smoke tests",  garatem que API está com o serviço básico executando.
+Em uma nova aba do console, execute os seguintes comandos.
+(Necessário a API rodando).
+
+```
+$ cd /tests
+```
+```
+$ pytest test.py
+```
