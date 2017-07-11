@@ -1,3 +1,8 @@
+- [Python](https://www.python.org)
+- [Botle](https://bottlepy.org/docs/dev/)
+- [Requests](http://docs.python-requests.org/en/master/)
+
+
 # Instalando a API:
 * pip install -r requeriments.txt
 
