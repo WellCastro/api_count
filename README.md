@@ -32,5 +32,5 @@ $ python api.py
 # Exemplos
 curl -i GET "http://localhost:8000/count/globoesporte.globo.com/Cruzeiro"
  ```json
- {"url_details": [{"access": "ok", "url": "globoesporte.globo.com"}], "total": 7, "word": "Cruzeiro"}
+ {"url_details": [{"access": "ok", "url": "globoesporte.globo.com"}], "total": 16, "word": "Cruzeiro"}
  ```
