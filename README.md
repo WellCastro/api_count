@@ -18,6 +18,8 @@ A Api considera a palavra em todo o conteúdo da URL informada, sendo assim a bu
 
 
 # Instalando a API:
+* virtualenv env
+* source env/bin/activate
 * pip install -r requeriments.txt
 
 # 1) Iniciando a aplicação:
