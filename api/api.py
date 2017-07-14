@@ -1,26 +1,22 @@
 """This API methods file."""
 
+import json
+import sys
 from bottle import run, get, response
 
-import requests
-import re
-import json
+sys.path.append("..")
 
-
-def count_words(url=None, word=None):
-    link = "http://{0}".format(url)
-    r = requests.get(link)
-    # total words
-    return len(re.findall(r"\b{text}\b".format(text=word), r.text, re.IGNORECASE))
+from common.base import BaseCom
 
 
 @get('/count/<url>/<word>')
 def api_search(url, word):
+    base = BaseCom()
     response.content_type = 'application/json'
     status = 200
     total = 0
     try:
-        total = count_words(url, word)
+        total = base.count_words(url, word)
         msg = "ok"
     except Exception, e:
         print e
